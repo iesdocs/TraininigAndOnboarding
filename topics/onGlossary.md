@@ -25,17 +25,25 @@ or in Author mode:
 The <glossgroup> is a specialized topic that can contain multiple <glossentry> topics within a single document. For example:
   
   <glossgroup id="things" xml:lang="en">
+    
     <title>Some terms</title>
+    
       <glossentry id="bicycle">
+        
         <glossterm>bicycle</glossterm>
-        <glossdef>Human powered mode of transport
-          with two wheels
-        </glossdef>
+        
+        <glossdef>Human powered mode of transport with two wheels</glossdef>
+        
         </glossentry>
+    
       <glossentry id="fruitbat">
+        
         <glossterm>Fruit bat</glossterm>
+        
         <glossdef>A bat which likes fruit</glossdef>
+        
       </glossentry>
+    
   </glossgroup>
 
 ## Map Level: Glossary Map
