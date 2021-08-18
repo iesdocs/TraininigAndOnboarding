@@ -185,4 +185,14 @@ Here's the pseudocode:
 ![image](https://user-images.githubusercontent.com/49274541/129876975-5341a066-95ef-4774-82f1-399f4b121a77.png)
 
 ![image](https://user-images.githubusercontent.com/49274541/129877022-8d4d7e50-2ad0-4a9d-b6d9-6a8266a1ae2d.png)
+			
+About the @scope attribute, the @scope attribute identifies the closeness of the relationship between the current document and the target resource.
+
+- Set @scope to "local" when the resource is part of the current set of content.
+- Set @scope to "peer" when the resource is part of the current set of content but might not accessible at build time, or for maps to be treated as root maps for the purpose of creating map-to-map key references (peer maps). An implementation might open such resources in the same browser window to distinguish them from those with @scope set to "external".
+- Set @scope to "external" when the resource is not part of the current information set and should open in a new browser window.
+			
+The default value for @scope depends on the address value of @href:
+- Processors can consider additional URI (e.g. www.google.com) schemes as "external" by default. 
+- Processors **MUST** always consider relative URIs (../xx/yyy/zzz) as "local" by default.
 
