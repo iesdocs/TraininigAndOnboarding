@@ -126,11 +126,34 @@ In Oxygen XML Editor, you need to select a transformation scenario before publis
 ## How to Generate PDF Using a Custom Transformation Scenario
 ![image](https://user-images.githubusercontent.com/49274541/126761226-9f522bc0-dfba-41cc-9ce3-6caca82c06ff.png)
 
-## How to insert crossreferences in oxygen
+## Content reuse
 			
-## External crossreferences
+### Content reuse 1: reuse the content directly
+			 
+![image](https://user-images.githubusercontent.com/49274541/129874995-8da15de5-d091-49e3-b286-4d1949c8ef2b.png)
 
-## Internal crossreferences
+![image](https://user-images.githubusercontent.com/49274541/129875048-e4091c27-acac-4795-a448-3a5f36ef31e7.png)
+      
+![image](https://user-images.githubusercontent.com/49274541/129875153-b3687927-9f79-4b4c-8e15-03ff31759fb8.png)
+
+
+
+### External crossreferences to topics within the book
+      
+1. Press backspace at the insert point.
+2. Enter *xref*.
+3. Select *xref (crossreference)*.
+
+![image](https://user-images.githubusercontent.com/49274541/129873506-a00c92c5-b8e6-4996-8294-f6ecb5902674.png)
+
+![image](https://user-images.githubusercontent.com/49274541/129873641-e9ae8762-e626-46ab-9ec3-c0f684dc966c.png)
+
+![image](https://user-images.githubusercontent.com/49274541/129874103-0db16515-f7c4-48d4-b6a4-d55c11786793.png)
+
+![image](https://user-images.githubusercontent.com/49274541/129874251-ec4067e3-213c-435c-956e-fc0f026c3d69.png)
+
+      
+### Internal crossreferences
 			
 Let's say we want to insert an internal reference link from one section to another section within a topic:
 
@@ -140,8 +163,16 @@ In the section 1 of this example, I want to create a reference link that links t
      ![image](https://user-images.githubusercontent.com/49274541/129858936-298edace-1db4-491d-8049-494f76af130c.png)
 
 Here's the pseudocode:
-      
-      <xref href="#topicID/targetElementID">*XrefText*</xref>
+			
+			<xref href="#topicID/targetElementID">XrefText</xref>
+
+![image](https://user-images.githubusercontent.com/49274541/129871399-a3aa31bb-8371-481c-a1d8-34a049bcf27c.png)
+
+![image](https://user-images.githubusercontent.com/49274541/129874560-bbd1c73c-087b-47d4-bd02-49f648640b3b.png)
+
+![image](https://user-images.githubusercontent.com/49274541/129874607-8cfb5f9b-8299-422e-9491-69d70549ed69.png)
+
+			
       
       
 
