@@ -186,7 +186,3 @@ Here's the pseudocode:
 
 ![image](https://user-images.githubusercontent.com/49274541/129877022-8d4d7e50-2ad0-4a9d-b6d9-6a8266a1ae2d.png)
 
-      
-      
-
-			I
