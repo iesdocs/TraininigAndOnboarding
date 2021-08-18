@@ -101,4 +101,48 @@ In the source code of <table> in DITA, try this:
 	</row>
 
 Corresponding settings have been made to the customization css file for publishing template.
+			
+## How to Customize Style with Oxygen 
+1. Go to https://styles.oxygenxml.com. 
+2. Configure each attribute.
+3. Click **See Results** to preview the effect in PDF or Webhelp.
+4. Download the style package: **Download** > **Publishing Template**.
 
+## How to Apply the Style to Oxygen 
+In Oxygen XML Editor, you need to select a transformation scenario before publishing a book in a certain format. The most frequently used format in IES DOCS is PDF. So the following instruction takes customizing PDF transformation as an example.
+
+**Procedure**:
+1. Open oXygen XML Editor v23.1.
+2. Select **DITA Maps** > **Configure Transformation Scenarios**. ![image](https://user-images.githubusercontent.com/49274541/126759829-74eb1fbe-4a00-4f5b-9619-a230025de927.png)
+3. Select **DITA Map PDF - based on HTML5 & CSS**. ![image](https://user-images.githubusercontent.com/49274541/126759535-afa97ada-e77a-4945-8879-c6965389f3c7.png)
+4. Click **Edit**.
+5. Click **Yes** to duplicate and edit the scenario. ![image](https://user-images.githubusercontent.com/49274541/126760029-6755cba7-83d8-4983-aa52-2a75f9c8b7c7.png)
+6. Specify the name of this custom transformation scenario in the **Edit Scenario** window. ![image](https://user-images.githubusercontent.com/49274541/126760265-efe8ccec-ada7-4091-a41d-4efc2826b62a.png)
+7. Click **Choose Custom Publishing Template**.![image](https://user-images.githubusercontent.com/49274541/126760420-2f2fc6c6-94c8-4d2d-8da4-aee5781eb20f.png)
+8. Browse for a publishing template from local folder. 
+9. Click **OK**.![image](https://user-images.githubusercontent.com/49274541/126760747-36142c30-b581-42ca-beed-1613a61f20f8.png)
+10. Click **OK** to save the settings.
+
+## How to Generate PDF Using a Custom Transformation Scenario
+![image](https://user-images.githubusercontent.com/49274541/126761226-9f522bc0-dfba-41cc-9ce3-6caca82c06ff.png)
+
+## How to insert crossreferences in oxygen
+			
+## External crossreferences
+
+## Internal crossreferences
+			
+Let's say we want to insert an internal reference link from one section to another section within a topic:
+
+![image](https://user-images.githubusercontent.com/49274541/129858013-c691fb49-bccb-40b6-b90a-b0a3e2ab67b9.png)
+
+In the section 1 of this example, I want to create a reference link that links to section 2 with id=sec2.
+     ![image](https://user-images.githubusercontent.com/49274541/129858936-298edace-1db4-491d-8049-494f76af130c.png)
+
+Here's the pseudocode:
+      
+      <xref href="#topicID/targetElementID">*XrefText*</xref>
+      
+      
+
+			I
